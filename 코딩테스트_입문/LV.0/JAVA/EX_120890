@@ -16,6 +16,7 @@ class Solution {
             }
         }
 
-        return answer = temp;
+        answer = temp;
+        return answer;
     }
 }
