@@ -12,12 +12,15 @@ class Solution {
             }
         }
         
-        int len = list.size();
-        String[] answer = new String[len];
+        // int len = list.size();
+        // String[] answer = new String[len];
         
-        for(int j=0; j < len; j++) {
-            answer[j] = list.get(j);
-        }
+        // for(int j=0; j < len; j++) {
+        //     answer[j] = list.get(j);
+        // }
+
+        String[] answer = new String[list.size()];
+        list.toArray(answer);
         
         return answer;
     }
