@@ -7,7 +7,7 @@ class Solution {
         int c = 0;
         
         for(String s : str) {
-           if(s.contains("x")) {
+           if(s.endsWith("x")) {
                if(s.equals("x")) {
                    a += 1;
                } else {
