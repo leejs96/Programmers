@@ -1,3 +1,4 @@
+// 1.
 class Solution {
     public String solution(int[] food) {
         String answer = "";        
@@ -13,6 +14,20 @@ class Solution {
         sb.reverse();
         
         answer += "0" + sb.toString();
+        
+        return answer;
+    }
+}
+
+// 2.
+class Solution {
+    public String solution(int[] food) {
+        String answer = "0";        
+        
+        for(int i = food.length-1; i > 0; i--) {
+            String s = Integer.toString(i).repeat(food[i]/2);
+            answer = s + answer + s;
+        }
         
         return answer;
     }
